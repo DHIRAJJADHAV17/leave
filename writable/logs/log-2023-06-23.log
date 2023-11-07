@@ -1,0 +1,229 @@
+INFO - 2023-06-23 07:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 07:21:04 --> Class "App\Controllers\AdminModel" not found
+in APPPATH\Controllers\Home.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+ERROR - 2023-06-23 07:25:21 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\software\xamp\htdocs\pro1\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\software\xamp\htdocs\pro1\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\software\xamp\htdocs\pro1\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\software\xamp\htdocs\pro1\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\software\xamp\htdocs\pro1\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\software\xamp\htdocs\pro1\app\Controllers\Home.php(39): CodeIgniter\BaseModel->save(Array)
+#9 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(932): App\Controllers\Home->signup()
+#10 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\software\xamp\htdocs\pro1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\software\xamp\htdocs\pro1\system\Commands\Server\rewrite.php(47): require_once('D:\\software\\xam...')
+#14 {main}
+CRITICAL - 2023-06-23 07:25:21 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$qQ614ay/8WQ6/iRXnAsPpOBk6X9hJWHK3lQLmE2WMm.Mr2GFyN/Li\', NULL, \'23-06-23 07:25:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$qQ614ay/8WQ6/iRXnAsPpOBk6X9hJWHK3lQLmE2WMm.Mr2GFyN/Li\', NULL, \'23-06-23 07:25:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$qQ614ay/8WQ6/iRXnAsPpOBk6X9hJWHK3lQLmE2WMm.Mr2GFyN/Li\', NULL, \'23-06-23 07:25:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (:name:, :email:, :password:, :phone:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+INFO - 2023-06-23 07:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 07:31:56 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\software\xamp\htdocs\pro1\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\software\xamp\htdocs\pro1\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\software\xamp\htdocs\pro1\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\software\xamp\htdocs\pro1\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\software\xamp\htdocs\pro1\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\software\xamp\htdocs\pro1\app\Controllers\Home.php(39): CodeIgniter\BaseModel->save(Array)
+#9 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(932): App\Controllers\Home->signup()
+#10 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\software\xamp\htdocs\pro1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\software\xamp\htdocs\pro1\system\Commands\Server\rewrite.php(47): require_once('D:\\software\\xam...')
+#14 {main}
+CRITICAL - 2023-06-23 07:31:56 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$icGNrmF2b7K2lAntXK4XIu4f5x027Wm3LBoAJJs4TCvIedJRjZ/wu\', NULL, \'23-06-23 07:31:56\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$icGNrmF2b7K2lAntXK4XIu4f5x027Wm3LBoAJJs4TCvIedJRjZ/wu\', NULL, \'23-06-23 07:31:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$icGNrmF2b7K2lAntXK4XIu4f5x027Wm3LBoAJJs4TCvIedJRjZ/wu\', NULL, \'23-06-23 07:31:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (:name:, :email:, :password:, :phone:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+INFO - 2023-06-23 07:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 07:35:56 --> mysqli_sql_exception: Column 'phone' cannot be null in D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\software\xamp\htdocs\pro1\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\software\xamp\htdocs\pro1\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\software\xamp\htdocs\pro1\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\software\xamp\htdocs\pro1\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\software\xamp\htdocs\pro1\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\software\xamp\htdocs\pro1\app\Controllers\Home.php(39): CodeIgniter\BaseModel->save(Array)
+#9 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(932): App\Controllers\Home->signup()
+#10 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\software\xamp\htdocs\pro1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\software\xamp\htdocs\pro1\system\Commands\Server\rewrite.php(47): require_once('D:\\software\\xam...')
+#14 {main}
+CRITICAL - 2023-06-23 07:35:56 --> Column 'phone' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$n406AYrHkY0joyGnqKMbXOgBgDC6UITS7vLQZIgIT/kZCTx19DsrG\', NULL, \'23-06-23 07:35:56\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$n406AYrHkY0joyGnqKMbXOgBgDC6UITS7vLQZIgIT/kZCTx19DsrG\', NULL, \'23-06-23 07:35:56\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'ram@123.com\', \'$2y$10$n406AYrHkY0joyGnqKMbXOgBgDC6UITS7vLQZIgIT/kZCTx19DsrG\', NULL, \'23-06-23 07:35:56\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (:name:, :email:, :password:, :phone:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+INFO - 2023-06-23 07:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-23 07:38:13 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getInt()
+in APPPATH\Controllers\Home.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+INFO - 2023-06-23 07:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 07:42:26 --> mysqli_sql_exception: Column 'phone' cannot be null in D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\software\xamp\htdocs\pro1\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\software\xamp\htdocs\pro1\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\software\xamp\htdocs\pro1\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\software\xamp\htdocs\pro1\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\software\xamp\htdocs\pro1\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\software\xamp\htdocs\pro1\app\Controllers\Home.php(39): CodeIgniter\BaseModel->save(Array)
+#9 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(932): App\Controllers\Home->signup()
+#10 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\software\xamp\htdocs\pro1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\software\xamp\htdocs\pro1\system\Commands\Server\rewrite.php(47): require_once('D:\\software\\xam...')
+#14 {main}
+CRITICAL - 2023-06-23 07:42:26 --> Column 'phone' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ramu\', \'ram@1234.com\', \'$2y$10$J6NgPGW.MNsw.scCLHY7IuO3CbjvysIgbS9AsD8HeqgHSiKVUys0i\', NULL, \'23-06-23 07:42:26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ramu\', \'ram@1234.com\', \'$2y$10$J6NgPGW.MNsw.scCLHY7IuO3CbjvysIgbS9AsD8HeqgHSiKVUys0i\', NULL, \'23-06-23 07:42:26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ramu\', \'ram@1234.com\', \'$2y$10$J6NgPGW.MNsw.scCLHY7IuO3CbjvysIgbS9AsD8HeqgHSiKVUys0i\', NULL, \'23-06-23 07:42:26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (:name:, :email:, :password:, :phone:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Home.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+CRITICAL - 2023-06-23 07:46:09 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::Int()
+in APPPATH\Controllers\Home.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+INFO - 2023-06-23 07:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 07:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-23 08:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-23 14:55:55 --> mysqli_sql_exception: Column 'phone' cannot be null in D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\software\xamp\htdocs\pro1\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\software\xamp\htdocs\pro1\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\software\xamp\htdocs\pro1\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\software\xamp\htdocs\pro1\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\software\xamp\htdocs\pro1\app\Controllers\Home.php(50): CodeIgniter\Model->insert(Array)
+#8 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(932): App\Controllers\Home->signup()
+#9 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\software\xamp\htdocs\pro1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\software\xamp\htdocs\pro1\system\Commands\Server\rewrite.php(47): require_once('D:\\software\\xam...')
+#13 {main}
+CRITICAL - 2023-06-23 14:55:55 --> Column 'phone' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'saaaa@123.com\', \'$2y$10$WB57xwxdhkohlRrxfQ4s1urih4UNMFvsFuVpXULtJoYcwd.TxIJj.\', NULL, \'23-06-23 14:55:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'saaaa@123.com\', \'$2y$10$WB57xwxdhkohlRrxfQ4s1urih4UNMFvsFuVpXULtJoYcwd.TxIJj.\', NULL, \'23-06-23 14:55:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'saaaa@123.com\', \'$2y$10$WB57xwxdhkohlRrxfQ4s1urih4UNMFvsFuVpXULtJoYcwd.TxIJj.\', NULL, \'23-06-23 14:55:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (:name:, :email:, :password:, :phone:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
+ERROR - 2023-06-23 14:57:35 --> mysqli_sql_exception: Column 'phone' cannot be null in D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\software\xamp\htdocs\pro1\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ad...', 0)
+#1 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ad...')
+#2 D:\software\xamp\htdocs\pro1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ad...')
+#3 D:\software\xamp\htdocs\pro1\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ad...', Array, false)
+#4 D:\software\xamp\htdocs\pro1\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\software\xamp\htdocs\pro1\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\software\xamp\htdocs\pro1\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\software\xamp\htdocs\pro1\app\Controllers\Home.php(50): CodeIgniter\Model->insert(Array)
+#8 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(932): App\Controllers\Home->signup()
+#9 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\software\xamp\htdocs\pro1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\software\xamp\htdocs\pro1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\software\xamp\htdocs\pro1\system\Commands\Server\rewrite.php(47): require_once('D:\\software\\xam...')
+#13 {main}
+CRITICAL - 2023-06-23 14:57:35 --> Column 'phone' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'saaaa@123.com\', \'$2y$10$CQM55ORhKQ7yzHJI6mHibubmNhBM4hvEdICFHJCIR53pDRjWs2Qw.\', NULL, \'23-06-23 14:57:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'saaaa@123.com\', \'$2y$10$CQM55ORhKQ7yzHJI6mHibubmNhBM4hvEdICFHJCIR53pDRjWs2Qw.\', NULL, \'23-06-23 14:57:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (\'ram\', \'saaaa@123.com\', \'$2y$10$CQM55ORhKQ7yzHJI6mHibubmNhBM4hvEdICFHJCIR53pDRjWs2Qw.\', NULL, \'23-06-23 14:57:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `admin` (`name`, `email`, `password`, `phone`, `created_at`) VALUES (:name:, :email:, :password:, :phone:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->signup()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\software\\xamp\\htdocs\\pro1\\public\\index.php')
